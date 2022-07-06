@@ -12,3 +12,6 @@ mybatis:
 test:
   springboot_mybatisTest: 测试
 
+Leader:
+  name: 测试
+  age: 100

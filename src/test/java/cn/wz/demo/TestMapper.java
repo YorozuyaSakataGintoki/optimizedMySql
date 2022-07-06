@@ -2,6 +2,7 @@ package cn.wz.demo;
 
 
 import cn.wz.pojo.Empolyee;
+import cn.wz.pojo.Leader;
 import cn.wz.service.EmpolyeeService;
 import cn.wz.service.impl.EmpolyeeServiceImpl;
 
@@ -33,5 +34,12 @@ public class TestMapper {
     @Test
     public void testValue() {
         System.out.println(test);
+    }
+
+    @Autowired
+    Leader leader;
+    @Test
+    public void testContextGet(){
+        System.out.println(leader);
     }
 }
