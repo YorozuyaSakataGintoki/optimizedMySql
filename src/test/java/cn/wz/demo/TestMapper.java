@@ -8,6 +8,7 @@ import cn.wz.service.impl.EmpolyeeServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -25,5 +26,12 @@ public class TestMapper {
         for (Empolyee empolyee : list) {
             System.out.println(empolyee);
         }
+    }
+
+    @Value("${test.springboot_mybatisTest}")
+    String test;
+    @Test
+    public void testValue() {
+        System.out.println(test);
     }
 }

@@ -9,3 +9,6 @@ mybatis:
   mapper-locations: classpath:cn.wz.mappper/*.xml
   type-aliases-package: cn.wz.pojo
 
+test:
+  springboot_mybatisTest: 测试
+
